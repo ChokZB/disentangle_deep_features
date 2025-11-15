@@ -31,11 +31,6 @@ disentangle_deep_features/
 │   ├── Style_1.jpg                       # Sample style image
 │   └── vgg19_architecture.png            # Reference diagram
 │
-├── outputs/
-│   ├── Dual_Channel_NST/                 # Modified NST outputs
-│   ├── L-H_Frequency_Images/             # Frequency decomposition visualisations
-│   └── Original_NST/                     # Baseline NST results
-│
 └── requirements.txt                      # Dependency list for reproducibility
 ````
 
