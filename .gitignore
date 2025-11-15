@@ -40,8 +40,9 @@ build/
 dist/
 *.egg-info/
 
-# Output folders (optional, keep only small sample results)
+# Output folders 
 outputs/
+!outputs/
 !outputs/README.md
 
 # Notebook autosave files
