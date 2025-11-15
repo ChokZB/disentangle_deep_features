@@ -32,10 +32,13 @@ disentangle_deep_features/
 │   └── ...
 │
 ├── models/
-│   └── download_models.sh
+│   └── download_models.sh                # Optional script to automatically fetch the VGG19 Caffe weights
 │
 ├── outputs/
-│   └── README.md                     
+│   ├── Dual_Channel_NST/                 # Modified NST outputs
+│   ├── L-H_Frequency_Images/             # Frequency decomposition visualisations
+│   ├── Original_NST/                     # Baseline NST results
+│   └── README.md                         # Notes describing generated output folders
 │
 ├── .gitignore                            # Files/folders excluded from Git
 │
@@ -46,7 +49,7 @@ disentangle_deep_features/
 ├── disentangle_deep_features.ipynb       # Main implementation notebook
 │
 └── requirements.txt                      # Dependency list for reproducibility
-````
+```
 
 ---
 
@@ -130,6 +133,13 @@ disentangle_deep_features/
 * Dual-channel NST architecture produced clearer content preservation and reduced feature interference.
 * Frequency-based decomposition offered insight into the separation of structural and stylistic information.
 
+Example outputs can be found in:
+
+```
+outputs/Dual_Channel_NST/
+outputs/L-H_Frequency_Images/
+outputs/Original_NST/
+```
 
 ---
 
