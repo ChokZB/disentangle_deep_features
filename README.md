@@ -21,15 +21,24 @@ The aim is to explore interpretability in neural-based synthesis by:
 ```
 disentangle_deep_features/
 │
-├── disentangle_deep_features.ipynb       # Main implementation notebook
+├── images/
+│   ├── Content_1.jpg                     # Sample content image
+│   ├── Style_1.jpg                       # Sample style image
+│   └── ...
 │
 ├── models/
-│   └── vgg19-d01eb7cb.pth                # Pretrained VGG19 (Caffe version)
+│   └── download_models.sh
 │
-├── images/
-│   ├── Content_4.jpg                     # Sample content image
-│   ├── Style_1.jpg                       # Sample style image
-│   └── vgg19_architecture.png            # Reference diagram
+├── outputs/
+│   └── README.md                     
+│
+├── .gitignore                            # Files/folders excluded from Git
+│
+├── LICENSE                               # MIT License
+│
+├── README.md                             # Project overview and instructions
+│
+├── disentangle_deep_features.ipynb       # Main implementation notebook
 │
 └── requirements.txt                      # Dependency list for reproducibility
 ````
