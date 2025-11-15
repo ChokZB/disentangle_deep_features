@@ -1,5 +1,10 @@
 # Disentangle Deep Features in Generative Convolution Network for Interpretable Neural-based Synthesis Applications
 
+![License](https://img.shields.io/badge/License-MIT-blue)
+![Python](https://img.shields.io/badge/Python-3.8+-yellow)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ChokZB/disentangle_deep_features/blob/main/disentangle_deep_features.ipynb)
+
 This project investigates how hierarchical deep features can be disentangled and interpreted within generative convolutional networks for image synthesis tasks.  
 
 A modified neural style transfer (NST) framework was implemented using pretrained VGG19 (Caffe weights) to analyse the relationship between content, style, and latent representations across convolutional layers.
@@ -125,28 +130,6 @@ disentangle_deep_features/
 * Dual-channel NST architecture produced clearer content preservation and reduced feature interference.
 * Frequency-based decomposition offered insight into the separation of structural and stylistic information.
 
-Example outputs can be found in:
-
-```
-outputs/Dual_Channel_NST/
-outputs/L-H_Frequency_Images/
-```
-
----
-
-## 🗂️ Requirements File
-
-**`requirements.txt`**
-
-```
-torch>=2.0
-torchvision>=0.15
-numpy>=1.23
-matplotlib>=3.7
-opencv-python>=4.8
-pillow>=10.0
-tqdm
-```
 
 ---
 
