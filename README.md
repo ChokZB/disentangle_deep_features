@@ -1,0 +1,321 @@
+# Disentangle Deep Features in Generative Convolution Network for Interpretable Neural-based Synthesis Applications
+
+This project investigates how hierarchical deep features can be disentangled and interpreted within generative convolutional networks for image synthesis tasks.  
+
+A modified neural style transfer (NST) framework was implemented using pretrained **VGG19 (Caffe weights)** to analyse the relationship between content, style, and latent representations across convolutional layers.
+
+---
+
+## 📚 Overview
+
+The aim is to explore interpretability in neural-based synthesis by:
+- Disentangling feature hierarchies within VGG-based encoders.
+- Studying how different layers encode content and style information.
+- Visualising and analysing the latent spaces contributing to image generation.
+- Comparing baseline and modified NST pipelines to evaluate synthesis interpretability.
+
+---
+
+## 🧩 Project Structure
+
+```
+disentangle_deep_features/
+│
+├── disentangle_deep_features.ipynb   # Main implementation notebook
+│
+├── models/
+│   └── vgg19-d01eb7cb.pth                # Pretrained VGG19 (Caffe version)
+│
+├── images/
+│   ├── Content_1.jpg                     # Sample content image
+│   ├── Style_1.jpg                       # Sample style image
+│   └── ...
+│
+└── outputs/
+    ├── Dual_Channel_NST/                 # Modified NST outputs
+    ├── L-H_Frequency_Images/             # Frequency decomposition visualisations
+    └── Original_NST/                     # Baseline NST results
+````
+
+---
+
+## ⚙️ Tools & Frameworks
+
+- **Python** ≥ 3.8  
+- **PyTorch** ≥ 2.0  
+- **NumPy**, **Matplotlib**, **OpenCV** 
+- **Google Colab / Jupyter Notebook** for experimentation and visualisation  
+
+---
+
+## 🚀 Setup & Execution
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ChokZB/disentangle_deep_features.git
+   cd disentangle_deep_features
+
+
+2. **Create a virtual environment**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate        # On Linux / macOS
+   venv\Scripts\activate           # On Windows
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Download pretrained model weights**
+   The VGG19 weights used are the original Caffe-based parameters, available from:
+
+   ```
+   https://web.eecs.umich.edu/~justincj/models/vgg19-d01eb7cb.pth
+   ```
+
+   Place the file inside:
+
+   ```
+   models/vgg19-d01eb7cb.pth
+   ```
+
+5. **Run the notebook**
+
+   ```bash
+   jupyter notebook disentangle_deep_features.ipynb
+   ```
+
+   or open it directly in Google Colab.
+
+
+## 🧠 Methodology
+
+1. **Feature Extraction:**
+   VGG19 pretrained weights (Caffe) used for hierarchical convolutional feature extraction.
+
+2. **Feature Disentanglement:**
+   Mid-level feature maps analysed and separated into content and style representations using frequency and channel-wise decomposition.
+
+3. **Neural Style Transfer Pipeline:**
+   Both baseline and dual-channel NST architectures implemented to compare interpretability and reconstruction fidelity.
+
+4. **Feature Visualisation:**
+   Layer-wise activations, Gram matrices, and reconstructed feature maps visualised to understand network interpretability.
+
+---
+
+## 📈 Results & Analysis
+
+* Disentangled representations demonstrate improved interpretability across convolutional depth.
+* Dual-channel NST architecture produced clearer content preservation and reduced feature interference.
+* Frequency-based decomposition offered insight into the separation of structural and stylistic information.
+
+Example outputs can be found in:
+
+```
+outputs/Dual_Channel_NST/
+outputs/L-H_Frequency_Images/
+```
+
+---
+
+## 🗂️ Requirements File
+
+Example `requirements.txt` (adjust versions as necessary):
+
+```
+torch>=2.0
+torchvision>=0.15
+numpy>=1.23
+matplotlib>=3.7
+opencv-python>=4.8
+pillow>=10.0
+tqdm
+```
+
+---
+
+## 🪪 Licence
+
+This project is released under the **MIT Licence**.
+Feel free to use, modify, and distribute for research and educational purposes.
+
+---
+
+## 🧑‍💻 Author
+
+**Chok Zu Bing**
+
+GitHub: [@ChokZB](https://github.com/ChokZB)
+
+
+
+
+
+
+---
+
+# Disentangle Deep Features in Generative Convolution Network for Interpretable Neural-based Synthesis Applications
+
+This project investigates how hierarchical deep features can be disentangled and interpreted within generative convolutional networks for image synthesis tasks.  
+
+A modified neural style transfer (NST) framework was implemented using pretrained VGG19 (Caffe weights) to analyse the relationship between content, style, and latent representations across convolutional layers.
+
+---
+
+## 📚 Overview
+
+The aim is to explore interpretability in neural-based synthesis by:
+- Disentangling feature hierarchies within VGG-based encoders.
+- Studying how different layers encode content and style information.
+- Visualising and analysing the latent spaces contributing to image generation.
+- Comparing baseline and modified NST pipelines to evaluate synthesis interpretability.
+
+---
+
+## 🧩 Project Structure
+
+```
+disentangle_deep_features/
+│
+├── disentangle_deep_features.ipynb       # Main implementation notebook
+│
+├── models/
+│   └── vgg19-d01eb7cb.pth                # Pretrained VGG19 (Caffe version)
+│
+├── images/
+│   ├── Content_4.jpg                     # Sample content image
+│   ├── Style_1.jpg                       # Sample style image
+│   └── vgg19_architecture.png            # Reference diagram
+│
+├── outputs/
+│   ├── Dual_Channel_NST/                 # Modified NST outputs
+│   ├── L-H_Frequency_Images/             # Frequency decomposition visualisations
+│   └── Original_NST/                     # Baseline NST results
+│
+└── requirements.txt                      # Dependency list for reproducibility
+````
+
+---
+
+## ⚙️ Tools & Frameworks
+
+- **Python** ≥ 3.8  
+- **PyTorch** ≥ 2.0  
+- **NumPy**, **Matplotlib**, **OpenCV**
+- **Google Colab / Jupyter Notebook** for experimentation and visualisation  
+
+---
+
+## 🚀 Setup & Execution
+
+1. **Clone the repository**
+   
+   ```bash
+   git clone https://github.com/ChokZB/disentangle_deep_features.git
+   cd disentangle_deep_features
+   ```
+
+2. **Create a virtual environment**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate        # On Linux / macOS
+   venv\Scripts\activate           # On Windows
+   ```
+
+3. **Install dependencies**
+   
+   Install all required Python packages using the provided `requirements.txt`:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Download pretrained model weights**
+   
+   The VGG19 weights used are the original Caffe-based parameters, available from:
+
+   ```
+   https://web.eecs.umich.edu/~justincj/models/vgg19-d01eb7cb.pth
+   ```
+
+   Place the file inside:
+
+   ```
+   models/vgg19-d01eb7cb.pth
+   ```
+
+5. **Run the notebook**
+
+   ```bash
+   jupyter notebook disentangle_deep_features.ipynb
+   ```
+
+   or open it directly in Google Colab.
+
+---
+
+## 🧠 Methodology
+
+1. **Feature Extraction:**
+   VGG19 pretrained weights (Caffe) used for hierarchical convolutional feature extraction.
+
+2. **Feature Disentanglement:**
+   Mid-level feature maps analysed and separated into content and style representations using frequency and channel-wise decomposition.
+
+3. **Neural Style Transfer Pipeline:**
+   Both baseline and dual-channel NST architectures implemented to compare interpretability and reconstruction fidelity.
+
+4. **Feature Visualisation:**
+   Layer-wise activations, Gram matrices, and reconstructed feature maps visualised to understand network interpretability.
+
+---
+
+## 📈 Results & Analysis
+
+* Disentangled representations demonstrate improved interpretability across convolutional depth.
+* Dual-channel NST architecture produced clearer content preservation and reduced feature interference.
+* Frequency-based decomposition offered insight into the separation of structural and stylistic information.
+
+Example outputs can be found in:
+
+```
+outputs/Dual_Channel_NST/
+outputs/L-H_Frequency_Images/
+```
+
+---
+
+## 🗂️ Requirements File
+
+**`requirements.txt`**
+
+```
+torch>=2.0
+torchvision>=0.15
+numpy>=1.23
+matplotlib>=3.7
+opencv-python>=4.8
+pillow>=10.0
+tqdm
+```
+
+---
+
+
+## 🧑‍💻 Author
+
+**Chok Zu Bing**
+
+GitHub: [@ChokZB](https://github.com/ChokZB)
+
+---
+
+## 🪪 Licence
+
+This project is released under the [MIT License](LICENSE).

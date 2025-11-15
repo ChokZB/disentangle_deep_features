@@ -1,0 +1,51 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model weights and large data files
+*.pth
+*.pt
+*.h5
+*.pkl
+*.npz
+*.npy
+*.zip
+
+# Log and temporary files
+*.log
+*.tmp
+*.bak
+
+# IDE configuration
+.vscode/
+.idea/
+*.swp
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+
+# Output folders (optional, keep only small sample results)
+outputs/
+!outputs/README.md
+
+# Notebook autosave files
+.~*
+
+# Colab or cloud environment files
+*.json
