@@ -11,7 +11,7 @@ A modified neural style transfer (NST) framework was implemented using pretraine
 
 ---
 
-## 📚 Overview
+## 🎯 Objectives
 
 The aim is to explore interpretability in neural-based synthesis by:
 - Disentangling feature hierarchies within VGG-based encoders.
