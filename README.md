@@ -3,7 +3,6 @@
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Python](https://img.shields.io/badge/Python-3.8+-yellow)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ChokZB/disentangle_deep_features/blob/main/disentangle_deep_features.ipynb)
 
 This project investigates how hierarchical deep features can be disentangled and interpreted within generative convolutional networks for image synthesis tasks.  
 
@@ -53,7 +52,7 @@ disentangle_deep_features/
 
 ---
 
-## 💻 Setup & Execution
+## 🔧 Setup & Execution
 
 1. **Clone the repository**
    
@@ -97,10 +96,6 @@ disentangle_deep_features/
    ```bash
    jupyter notebook disentangle_deep_features.ipynb
    ```
-
-   or open it directly in Google Colab. 
-
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ChokZB/disentangle_deep_features/blob/main/disentangle_deep_features.ipynb)
 
 ---
 
