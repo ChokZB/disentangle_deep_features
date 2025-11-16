@@ -53,7 +53,7 @@ disentangle_deep_features/
 
 ---
 
-## 🚀 Setup & Execution
+## 💻 Setup & Execution
 
 1. **Clone the repository**
    
