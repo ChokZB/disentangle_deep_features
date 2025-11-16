@@ -72,7 +72,7 @@ disentangle_deep_features/
 
 3. **Install dependencies**
    
-   Install all required Python packages using the provided `requirements.txt`:
+   Install all required packages using the provided `requirements.txt`:
 
    ```bash
    pip install -r requirements.txt
