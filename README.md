@@ -53,15 +53,6 @@ disentangle_deep_features/
 
 ---
 
-## ⚙️ Tools & Frameworks
-
-- **Python** ≥ 3.8  
-- **PyTorch** ≥ 2.0  
-- **NumPy**, **Matplotlib**, **OpenCV**
-- **Google Colab / Jupyter Notebook** for experimentation and visualisation  
-
----
-
 ## 🚀 Setup & Execution
 
 1. **Clone the repository**
