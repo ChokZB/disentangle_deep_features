@@ -98,7 +98,9 @@ disentangle_deep_features/
    jupyter notebook disentangle_deep_features.ipynb
    ```
 
-   or open it directly in Google Colab.
+   or open it directly in Google Colab. 
+
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ChokZB/disentangle_deep_features/blob/main/disentangle_deep_features.ipynb)
 
 ---
 
