@@ -21,7 +21,7 @@ The aim is to explore interpretability in neural-based synthesis by:
 
 ---
 
-## 🧩 Project Structure
+## 📁 Project Structure
 
 ```
 disentangle_deep_features/
